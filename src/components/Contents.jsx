@@ -2,30 +2,6 @@ import React from 'react'
 import axios from 'axios'
 
 
-/* function Contents() {
-  return (
-    <section id="contents">
-        <div className="inner">
-            <div className="left">
-                <em>{leftInfo[0].small}</em>
-                <h2>{leftInfo[0].title}</h2>
-                <p>{leftInfo[0].desc}</p>
-                <a className="consult" href="/">{leftInfo[0].btn}</a>
-            </div>
-            <div className="right">
-                <ul>
-                    {rightInfo.map((txt)=>(
-                        <RightCont title={txt.title} desc={txt.desc} key={txt.id}/>
-                    ))}
-                </ul>
-            </div>
-        </div>
-    </section>
-  )
-} */
-
-
-
 class Rightcont extends React.Component {
 
     state = {
@@ -36,7 +12,6 @@ class Rightcont extends React.Component {
         const {data: {righttInfo},} = await axios.get('https://dam1007.github.io/data/react222.json');
         
         this.setState({contsright: righttInfo});
-        //console.log(leftInfo);
     };
 
     componentDidMount() {
@@ -45,7 +20,6 @@ class Rightcont extends React.Component {
 
     render() {
         const { contsright } = this.state;
-        // console.log({contsright});
         // console.log({contsright});
         return (
             <div className="right">
