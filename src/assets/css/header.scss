@@ -1,0 +1,24 @@
+#header {
+	background: #F6F8FD;
+	text-align: center;
+	.logo {
+		padding-top: 20px;
+	}
+	nav {
+		max-width: 1160px;
+		margin: 0 auto;
+	}
+	.gnb {
+		display: flex;
+		li {
+			width: 20%;
+			a {
+				display: inline-block;
+				line-height: 56px;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
